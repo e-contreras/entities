@@ -17,6 +17,8 @@ public class BugetSolicitude implements Serializable {
     @Basic(optional = false)
     @Column(name = "id", nullable = false)
     private Integer id;
+    @Column(name = "descripcion")
+    private String description;
     @Column(name = "fec_ini")
     @Temporal(TemporalType.TIMESTAMP)
     private Date initDate;

@@ -28,7 +28,7 @@ public class BudgetSolicitudeStatus implements Serializable {
     private Date modificationDate;
     @Basic(optional = false)
     @Column(name = "borrado", nullable = false)
-    private short erased;
+    private boolean erased;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "budgetSolicitudeStatus")
     private List<BugetSolicitude> bugetSolicitudeList;
     @JoinColumn(name = "usu_alta", referencedColumnName = "id")

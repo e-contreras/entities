@@ -1,10 +1,13 @@
 package py.com.econtreras.entity;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "sol_pre_productos", catalog = "econtreras", schema = "")
+@Data
 public class BudgetSolicitudeProdcut implements Serializable {
     private static final long serialVersionUID = 1L;
     @EmbeddedId
@@ -21,6 +24,9 @@ public class BudgetSolicitudeProdcut implements Serializable {
     @JoinColumn(name = "sol_presupuesto", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private BugetSolicitude bugetSolicitude;
+
+    public BudgetSolicitudeProdcut() {
+    }
 
     public BudgetSolicitudeProdcut(int producto, int solPresupuesto) {
         this.solPreProductosPK = new BudgetSolicitudePK(producto, solPresupuesto);

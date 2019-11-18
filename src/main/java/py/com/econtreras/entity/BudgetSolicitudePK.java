@@ -20,8 +20,11 @@ public class BudgetSolicitudePK implements Serializable {
     @Basic(optional = false)
     @Column(name = "sol_presupuesto", nullable = false)
     private int budgetSolicitudeId;
-	
-    public BudgetSolicitudePK(int productId, int budgetSolicitudeId) {
+
+	public BudgetSolicitudePK() {
+	}
+
+	public BudgetSolicitudePK(int productId, int budgetSolicitudeId) {
 		super();
 		this.productId = productId;
 		this.budgetSolicitudeId = budgetSolicitudeId;

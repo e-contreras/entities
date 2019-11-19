@@ -47,5 +47,8 @@ public class Inventory implements Serializable {
     @JoinColumn(name = "usu_modificacion", referencedColumnName = "id")
     @ManyToOne
     private User modificationUser;
+    @JoinColumn(referencedColumnName = "id", name = "producto", nullable = true)
+    @ManyToOne(optional = false)
+    private Product product;
 
 }

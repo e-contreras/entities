@@ -4,6 +4,8 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -20,19 +22,16 @@ public class BugetSolicitude implements Serializable {
     @Column(name = "descripcion")
     private String description;
     @Column(name = "fec_ini")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date initDate;
+    private LocalDateTime initDate;
     @Column(name = "fec_fin", length = 45)
-    private String endDate;
+    private LocalDateTime endDate;
     @Basic(optional = false)
-    @Column(name = "enviado", nullable = false)
+    @Column(name = "enviado", nullable = false, columnDefinition = "char(1) NOT NULL DEFAULT 'N'")
     private Character sent;
     @Column(name = "fec_alta")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date creationDate;
+    private LocalDateTime creationDate;
     @Column(name = "fec_modifcacion")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date modificationDate;
+    private LocalDateTime modificationDate;
     @ManyToMany(mappedBy = "bugetSolicitudeList")
     private List<ProductCategory> productCategoryList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "bugetSolicitude")
@@ -53,4 +52,7 @@ public class BugetSolicitude implements Serializable {
     private List<PurchaseInvoice> PurchaseInvoiceList;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "bugetSolicitude")
     private List<Budget> budgetList;
+    @Transient
+    private String status;
+
 }

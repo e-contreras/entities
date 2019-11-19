@@ -26,4 +26,5 @@ public class Fee implements Serializable {
     @ManyToOne
     private Category category;
 
+
 }

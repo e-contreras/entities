@@ -29,6 +29,8 @@ public class ProductSolicitude implements Serializable {
     @JoinColumn(name = "solicitud", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private Solicitude solicitude;
+    @Transient
+    private BigInteger purchasePrice;
 
     public ProductSolicitude(ProductSolicitudePK merSolicitudesPK) {
         this.merSolicitudesPK = merSolicitudesPK;

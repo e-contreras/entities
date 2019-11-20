@@ -6,6 +6,7 @@ py/com/econtreras/entity/MenuModule.class
 py/com/econtreras/entity/Motive.class
 py/com/econtreras/entity/ProductRemissionNotePK.class
 py/com/econtreras/entity/Solicitude.class
+py/com/econtreras/entity/Client.class
 py/com/econtreras/entity/ProductImage.class
 py/com/econtreras/entity/Provider.class
 py/com/econtreras/entity/Transfer.class
@@ -20,6 +21,7 @@ py/com/econtreras/entity/TransferDetail.class
 py/com/econtreras/entity/PersonType.class
 py/com/econtreras/entity/City.class
 py/com/econtreras/entity/Person.class
+py/com/econtreras/entity/ReceiptNumber.class
 py/com/econtreras/entity/SalesInvoiceDetail.class
 py/com/econtreras/entity/ProductRemissionNote.class
 py/com/econtreras/entity/ProductSolicitudePK.class
@@ -46,6 +48,7 @@ py/com/econtreras/entity/Product.class
 py/com/econtreras/entity/PurchaseInvoice.class
 py/com/econtreras/entity/SalesInvoiceDetailPK.class
 py/com/econtreras/entity/Customer.class
+py/com/econtreras/entity/ReceiptNumberPK.class
 py/com/econtreras/entity/DebitNoteDetail.class
 py/com/econtreras/entity/Neighborhood.class
 py/com/econtreras/entity/User.class

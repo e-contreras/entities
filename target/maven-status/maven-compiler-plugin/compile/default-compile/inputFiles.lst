@@ -29,6 +29,7 @@
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ProductRemissionNote.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Image.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/SalesInvoiceDetail.java
+/SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Client.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Devolution.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ProductImagePK.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ProductBudget.java
@@ -37,6 +38,7 @@
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ProductCategory.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Role.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/BugetSolicitude.java
+/SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ReceiptNumber.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Solicitude.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/PurchaseCreditNote.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ProductSolicitude.java
@@ -47,6 +49,7 @@
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/SolicitudeStatus.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Category.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/BudgetSolicitudeStatus.java
+/SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ReceiptNumberPK.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/ConfirmationToken.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Neighborhood.java
 /SD-DATA/PROJECTS/FACULTAD/ECONTRERAS/SOURCE/LINUX-VERSION/entities/src/main/java/py/com/econtreras/entity/Event.java

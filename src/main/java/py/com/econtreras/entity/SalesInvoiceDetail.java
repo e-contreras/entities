@@ -1,7 +1,9 @@
 
 package py.com.econtreras.entity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -9,6 +11,8 @@ import java.io.Serializable;
 @Data
 @Entity
 @Table(name = "fac_ven_detalles", catalog = "econtreras", schema = "")
+@AllArgsConstructor
+@NoArgsConstructor
 public class SalesInvoiceDetail implements Serializable {
     private static final long serialVersionUID = 1L;
     @EmbeddedId
@@ -28,5 +32,8 @@ public class SalesInvoiceDetail implements Serializable {
     @JoinColumn(name = "producto", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private Product product;
-    
+
+    public SalesInvoiceDetail(SalesInvoiceDetailPK facVenDetallesPK) {
+        this.facVenDetallesPK = facVenDetallesPK;
+    }
 }

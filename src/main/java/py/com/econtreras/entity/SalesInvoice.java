@@ -30,4 +30,7 @@ public class SalesInvoice implements Serializable {
     @JoinColumn(name = "fac_ven_timbrado", referencedColumnName = "id", nullable = false)
     @ManyToOne(optional = false)
     private Ringing ringing;
+    @JoinColumn(name = "clientes", referencedColumnName = "id", nullable = false)
+    @ManyToOne(optional = false, fetch = FetchType.EAGER)
+    private Client client;
 }

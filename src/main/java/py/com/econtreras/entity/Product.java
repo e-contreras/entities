@@ -73,4 +73,8 @@ public class Product implements Serializable {
     @Basic(optional = false)
     @Column(name = "modelo", nullable = true, length = 200)
     private String model;
+    @Basic(optional = false)
+    @Column(name = "impuesto", nullable = true)
+    private Integer taxtType;
+
 }

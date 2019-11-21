@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
@@ -23,8 +24,7 @@ public class SalesInvoice implements Serializable {
     private String invoiceNumber;
     @Basic(optional = false)
     @Column(name = "fec_emision", nullable = false)
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date emissionDate;
+    private LocalDateTime emissionDate;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "salesInvoice")
     private List<SalesInvoiceDetail> facVenDetallesList;
     @JoinColumn(name = "fac_ven_timbrado", referencedColumnName = "id", nullable = false)
@@ -32,5 +32,6 @@ public class SalesInvoice implements Serializable {
     private Ringing ringing;
     @JoinColumn(name = "clientes", referencedColumnName = "id", nullable = false)
     @ManyToOne(optional = false, fetch = FetchType.EAGER)
-    private Client client;
+    private User client;
+
 }

@@ -17,8 +17,8 @@ public class WorkOrderStatus implements Serializable {
     @Column(name = "id", nullable = false)
     private Integer id;
     @Basic(optional = false)
-    @Column(name = "description", nullable = false, length = 45)
-    private String descripcion;
+    @Column(name = "descripcion", nullable = false, length = 45)
+    private String description;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "status")
     private List<WorkOrder> workOrderList;
 }

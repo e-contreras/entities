@@ -32,6 +32,9 @@ public class SalesInvoiceDetail implements Serializable {
     @JoinColumn(name = "producto", referencedColumnName = "id", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private Product product;
+    @Basic( optional = false)
+    @Column(name = "tip_impuesto", nullable = false)
+    private Integer taxtType;
 
     public SalesInvoiceDetail(SalesInvoiceDetailPK facVenDetallesPK) {
         this.facVenDetallesPK = facVenDetallesPK;

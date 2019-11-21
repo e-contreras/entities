@@ -53,16 +53,16 @@ public class Tarjetas implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "fecha_expiracion_mes", nullable = false)
-    private int fechaExpiracionMes;
+    private Integer fechaExpiracionMes;
     
     @Basic(optional = false)
     @NotNull
     @Column(name = "fecha_expiracion_anho", nullable = false)
-    private int fechaExpiracionAnho;
+    private Integer fechaExpiracionAnho;
     
     @JoinColumn(name = "cliente", referencedColumnName = "id", nullable = false)
     @ManyToOne(optional = false, fetch = FetchType.EAGER)
-    private Client cliente;
+    private User cliente;
 
     
 }

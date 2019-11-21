@@ -5,6 +5,7 @@ import lombok.Data;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -28,8 +29,7 @@ public class Person implements Serializable {
     @Column(name = "documento", nullable = false, length = 45)
     private String documentNumber;
     @Column(name = "fec_nac")
-    @Temporal(TemporalType.DATE)
-    private Date birthday;
+    private LocalDate birthday;
     @Basic(optional = false)
     @Column(name = "email", nullable = false, length = 200)
     private String email;

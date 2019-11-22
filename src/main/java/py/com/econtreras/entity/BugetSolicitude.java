@@ -54,5 +54,8 @@ public class BugetSolicitude implements Serializable {
     private List<Budget> budgetList;
     @Transient
     private String status;
+    @JoinColumn(name = "categoria", referencedColumnName = "id")
+    @ManyToOne
+    private Category category;
 
 }
